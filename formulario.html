@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Boys 3 - Formulário</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body class="main-bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light transparent">
+      <a class="navbar-brand" href="#"
+        ><img src="../assets/logo_cotic.fw.png" width="256" height="64" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Início <span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="formulario.html">
+              Formulário <span class="sr-only">(página atual)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="lista.html">
+              Lista <span class="sr-only">(página atual)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Insira o formulário aqui. -->
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Chegou seu momento!</h1>
+          <p id="description" class="description text-center">
+            Preencha os campos abaixo para montar seu personagem
+          </p>
+        </header>
+        <form id="form" method="post" action="./forms.php">
+          <div class="form-group">
+            <label id="name-label" for="name">Nome</label>
+            <input type="text" name="nome" id="name" class="form-control" placeholder="Digite o nome do personagem" required/>
+          </div>
+          <div class="form-group">
+            <label id="idade-label" for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" class="form-control" placeholder="Digite a idade do personagem" required/>
+          </div>      
+          <div class="form-group">
+            <label id="nalinhamento-label" for="alinhamento">Alinhamento</label>
+            <select name="alinhamento" class="form-control">
+                <option value="the-boys">Selecione...</option>
+                <option value="the-boys">The Boys</option>
+                <option value="supes">Supes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="name-label" for="name">Ator/Atriz</label>
+            <input type="text" name="act" class="form-control" placeholder="Digite o nome de possíveis atores/atrizes" required/>
+          </div>
+          <div class="form-group">
+            <p>Bibliografia</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Digite aqui a bibliografia do seu personagem"
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button" name="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+      <footer class="down-inf">
+        <p class="down-inf-year">©2022 COTIC. <br />
+          Todos os direitos reservados.</p> 
+      </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
